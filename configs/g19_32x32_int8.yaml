@@ -1,0 +1,28 @@
+problem:
+  shape: gemm_ABZ
+  M: 768
+  N: 768
+  K: 768
+
+arch:
+  arithmetic:
+    instances: 1024
+    meshX: 32
+    word_bits: 8
+
+  storage:
+    - name: Registers
+      entries: 1
+      instances: 1024
+      meshX: 32
+      word_bits: 8
+
+    - name: GlobalBuffer
+      sizeKB: 1024
+      instances: 1
+      word_bits: 8
+
+    - name: DRAM
+      technology: DRAM
+      instances: 1
+      word_bits: 8

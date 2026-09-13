@@ -1,0 +1,82 @@
+=========================================
+GROUP 19 - BUILD LOG
+=========================================
+Date: Thu Sep  3 10:33:58 AM CAT 2026
+User: shadrick
+Hostname: kali
+=========================================
+
+=== SYSTEM INFORMATION ===
+OS: Linux kali 7.1.5+kali-amd64 #1 SMP PREEMPT_DYNAMIC Kali 7.1.5-1kali1 (2026-07-29) x86_64 GNU/Linux
+Shell: /usr/bin/zsh
+
+=== SCONS VERSION ===
+SCons by Steven Knight et al.:
+	SCons: v4.10.1.055b01f429d58b686701a56df863a817c36bb103, Sun, 16 Nov 2025 14:18:20 -0700, by bdbaddog on M1Dog2021
+	SCons path: ['/usr/lib/python3/dist-packages/SCons']
+Copyright (c) 2001 - 2025 The SCons Foundation
+
+=== GCC VERSION ===
+g++ (Debian 15.3.0-2) 15.3.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+
+=== PYTHON VERSION ===
+Python 3.14.6
+
+=== TIMELOOP BUILD ===
+-rwxrwxr-x 1 shadrick shadrick  8954208 Aug 31 13:00 bin/timeloop-config-test
+-rwxrwxr-x 1 shadrick shadrick 11464640 Aug 31 13:10 bin/timeloop-design-space
+-rwxrwxr-x 1 shadrick shadrick  2231600 Aug 31 13:00 bin/timeloop-mapper
+-rwxrwxr-x 1 shadrick shadrick  4102768 Aug 31 13:10 bin/timeloop-metrics
+-rwxrwxr-x 1 shadrick shadrick  6032216 Aug 31 13:10 bin/timeloop-model
+-rwxrwxr-x 1 shadrick shadrick  6035016 Aug 31 13:10 bin/timeloop-simple-mapper
+-rwxrwxr-x 1 shadrick shadrick 13982352 Aug 31 13:00 bin/timeloop-tests
+
+=== ACCELERGY BUILD ===
+
+=== CONFIG FILES ===
+-rw-rw-r-- 1 shadrick shadrick 342 Aug 31 13:32 /home/shadrick/group19/configs/arch_128x128_simple.yaml
+-rw-rw-r-- 1 shadrick shadrick 338 Aug 31 13:32 /home/shadrick/group19/configs/arch_32x32_simple.yaml
+-rw-rw-r-- 1 shadrick shadrick 341 Aug 13 14:48 /home/shadrick/group19/configs/arch_32x32.yaml
+-rw-rw-r-- 1 shadrick shadrick 338 Aug 31 13:32 /home/shadrick/group19/configs/arch_64x64_simple.yaml
+-rw-rw-r-- 1 shadrick shadrick 338 Sep  3 09:11 /home/shadrick/group19/configs/arch_os_64x64.yaml
+-rw-rw-r-- 1 shadrick shadrick 577 Aug 31 13:30 /home/shadrick/group19/configs/arch_ws_128x128.yaml
+-rw-rw-r-- 1 shadrick shadrick 573 Aug 31 13:31 /home/shadrick/group19/configs/arch_ws_32x32.yaml
+-rw-rw-r-- 1 shadrick shadrick 573 Aug 31 13:30 /home/shadrick/group19/configs/arch_ws_64x64.yaml
+-rw-rw-r-- 1 shadrick shadrick  54 Aug 13 14:45 /home/shadrick/group19/configs/bert_gemm.yaml
+-rw-rw-r-- 1 shadrick shadrick 396 Aug 13 14:49 /home/shadrick/group19/configs/g19_32x32_int8.yaml
+-rw-rw-r-- 1 shadrick shadrick 112 Aug 31 13:25 /home/shadrick/group19/configs/mapper.yaml
+-rw-rw-r-- 1 shadrick shadrick 280 Aug 31 13:25 /home/shadrick/group19/configs/mapping_ws.yaml
+
+=== RESULTS FILES ===
+-rw-rw-r-- 1 shadrick shadrick 11962 Sep  3 09:23 /home/shadrick/group19/results/os_64x64/timeloop-mapper.stats.txt
+-rw-rw-r-- 1 shadrick shadrick 11965 Aug 31 15:00 /home/shadrick/group19/results/ws_128x128_no_constraints/timeloop-mapper.stats.txt
+-rw-rw-r-- 1 shadrick shadrick 13106 Aug 31 13:37 /home/shadrick/group19/results/ws_32x32_no_constraints/timeloop-mapper.stats.txt
+-rw-rw-r-- 1 shadrick shadrick 11962 Aug 31 14:42 /home/shadrick/group19/results/ws_64x64_no_constraints/timeloop-mapper.stats.txt
+
+=== SAMPLE RESULTS (64x64) ===
+    Total scalar accesses                   : 10616832
+    Op per Byte                             : 85.28
+
+
+Summary Stats
+-------------
+GFLOPs (@1GHz): 4093.33
+Utilization: 50.00%
+Cycles: 221184
+Energy: 6215.83 uJ
+EDP(J*cycle): 1.37e+03
+Area: 0.00 mm^2
+
+Computes = 452984832
+fJ/Compute
+    __ARITH__                   = 250.00
+    GlobalBuffer                = 11128.18
+    DRAM                        = 2343.75
+    Total                       = 13721.93
+
+
+=========================================
+BUILD LOG COMPLETE
+=========================================

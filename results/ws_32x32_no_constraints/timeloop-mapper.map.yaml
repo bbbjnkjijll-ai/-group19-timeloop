@@ -1,0 +1,40 @@
+mapping:
+  - target: Registers
+    type: datatype
+    keep:
+      - Z
+    bypass:
+      - A
+      - B
+  - target: GlobalBuffer
+    type: datatype
+    keep:
+      - A
+      - B
+    bypass:
+      - Z
+  - target: DRAM
+    type: datatype
+    keep:
+      - A
+      - B
+      - Z
+    bypass:
+      []
+  - target: Registers
+    type: temporal
+    factors: M1 N1 K3
+    permutation: KMN
+  - target: GlobalBuffer
+    type: spatial
+    factors: M3 N32 K1
+    permutation: MNK
+    split: 1
+  - target: GlobalBuffer
+    type: temporal
+    factors: M32 N24 K64
+    permutation: KMN
+  - target: DRAM
+    type: temporal
+    factors: M8 N1 K4
+    permutation: MKN

@@ -1,0 +1,13 @@
+mapping:
+  - target: DRAM
+    type: temporal
+    factors: M=1 N=1 K=1
+    permutation: 'MNK'
+  - target: GlobalBuffer
+    type: spatial
+    factors: M=1 N=1 K=32
+    permutation: 'MNK'
+  - target: RegisterFile
+    type: temporal
+    factors: M=1 N=768 K=24
+    permutation: 'MNK'

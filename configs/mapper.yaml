@@ -1,0 +1,5 @@
+mapper:
+  optimization_metrics: [ energy, delay ]
+  num_threads: 4
+  algorithm: hybrid
+  victory_condition: 500
